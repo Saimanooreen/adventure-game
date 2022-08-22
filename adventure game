@@ -1,0 +1,35 @@
+# adventure-game
+name=input("Enter your name ")
+print("Welcome",name,"to this adventure game!")
+answer=input("You are on a dirt road,it has come to an end you can go left or right, which way would you go? \n").lower()
+if answer=="right":
+    print("There was a wild monkey which took away all of your belongings and food. You are now empty handed:(")
+    answer=input("You come to a river you can walk around it or swm across it? Type walk to walk to walk around it or "
+                 "swim to swim across it\n ")
+    if answer=="walk":
+        print("You walked for miles,you were exhausted and you lost :(")
+    elif answer=="swim":
+        print("You swam across and were eaten by an alligator.")
+    else:
+        print("Not a valid option.")
+
+elif answer=="left":
+    answer=input("You come to a bridge,it looks wobbly,do you wanna cross it or head back (cross/back)?")
+    if answer=="cross":
+        answer=input("You see an old man, who is wounded,would you like to help him or not (yes/no)? \n")
+        if answer=="yes":
+            print("You help the old man, and he is pleased by you. so he gives you a bag of gold and you WIN!!")
+        elif answer=="no":
+            print("You ignore the old man and he is offended and you lose!")
+        else:
+            print("not a valid option")
+
+    elif answer=="back":
+        print("You go back and lose.")
+    else:
+        print("Not a valid option. ")
+else:
+    print("Invalid option")
+print(f"Thanks for playing this game {name}!")
+
+
